@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__body">
+        <a href="" class="header__logo">
+          <img src="" alt="" class="logo__img" />
+          <span class="logo__text"
+            >Cars Classic <span class="blue__txt">Converter</span>
+          </span>
+        </a>
+        <nav class="header__nav">
+          <ul class="header___menu">
+            <li class="header__menu-item">
+              <a href="" class="nav__link">Cars</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="nav__link">About Us</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="nav__link">Services</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="nav__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <span class="header__number">+1 (240) 375-1288</span>
+      </div>
+    </header>
+    <section id="first-section" class="section">
+      <div class="head__info">
+        <h1 class="head__info-title">Profitable choice at the best prices</h1>
+        <h3 class="head__info-subtitle">
+          Calculate the final cost of the car in your currency, find out the
+          current rates and make a purchase at no extra cost
+        </h3>
+        <div class="modal__timer">
+          <div class="modal__timer-body">
+            <h3 class="modal__timer-title">
+              GET A <span class="blue__txt">FREE</span> MONTH TRIAL
+            </h3>
+
+            <p class="modal__timer-text">Hurry up!</p>
+            <span class="modal__timer-clock"
+              ><span id="hours">00</span>:<span id="minutes">00</span>:<span
+                id="seconds"
+                >00</span
+              ></span
+            >
+            <button class="modal__timer-button">GET FOR FREE</button>
+          </div>
+        </div>
+        <img src="./6256458.png" alt="" class="head__info-img" />
+      </div>
+    </section>
+    <section class="section">
+      <div class="converter">
+        <h1 class="head__info-title">Currency converter</h1>
+        <h3 class="head__info-subtitle">
+          <span class="blue__txt">Quickly</span> calculate the cost of a car in
+          your currency using current exchange rates
+        </h3>
+        <div class="converter__content">
+          <div class="converter__car-worth">
+            <input
+              class="car-worth__input"
+              id="car-worth"
+              type="number"
+              name=""
+              id=""
+              placeholder="0"
+            />
+          </div>
+          <svg
+            width="64px"
+            height="64px"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M16.3153 16.6681C15.9247 17.0587 15.9247 17.6918 16.3153 18.0824C16.7058 18.4729 17.339 18.4729 17.7295 18.0824L22.3951 13.4168C23.1761 12.6357 23.1761 11.3694 22.3951 10.5883L17.7266 5.9199C17.3361 5.52938 16.703 5.52938 16.3124 5.91991C15.9219 6.31043 15.9219 6.9436 16.3124 7.33412L19.9785 11.0002L2 11.0002C1.44772 11.0002 1 11.4479 1 12.0002C1 12.5524 1.44772 13.0002 2 13.0002L19.9832 13.0002L16.3153 16.6681Z"
+                fill="#0097fa"
+              ></path>
+            </g>
+          </svg>
+          <div class="converter__converted-worth">
+            <select class="select" id="selector"></select>
+            <p class="converted__worth" id="converted-worth">0</p>
+          </div>
+        </div>
+        <button class="converter__button" id="submit-button">Submit</button>
+      </div>
+    </section>
+    <section class="section">
+      <div class="currency">
+        <h1 class="head__info-title">Most popular currency</h1>
+        <h3 class="head__info-subtitle">
+          Track <span class="blue__txt">the most</span> current exchange rates
+          today in real time
+        </h3>
+        <ul class="currency__list"></ul>
+      </div>
+    </section>
+
+    <script src="./js/illia.js"></script>
+    <script src="./js/api.js"></script>
+    <script type="module" src="./js/timer.js"></script>
+  </body>
+</html>
