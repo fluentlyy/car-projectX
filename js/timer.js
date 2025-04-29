@@ -6,11 +6,13 @@ import {
   tickModal,
   showText,
 } from "./beetwen-timers.js";
-import { startSecondTimer, updateSecondTimer } from "./timer-second.js";
-/* import debounce from "lodash.debounce"; */
+import {
+  startSecondTimer,
+  updateSecondTimer,
+  lodashTimer,
+} from "./timer-second.js";
 
 let button = document.querySelector(".modal__timer-button");
-/* document.body.style.overflow = "hidden"; */
 
 updateTimer();
 startTimer();
@@ -27,9 +29,9 @@ buttonSubmit.addEventListener("click", function () {
     tickModal();
     setTimeout(() => {
       showText();
+      updateSecondTimer();
+      startSecondTimer();
+      lodashTimer();
     }, 2100);
-
-    /* updateSecondTimer();
-    startSecondTimer(); */
   }
 });

@@ -9,6 +9,7 @@ let minutes = 10;
 let seconds = 0;
 
 export function updateTimer() {
+  document.body.style.overflow = "hidden";
   hoursText.textContent = "0" + hours;
   if (minutes < 10) {
     minutesText.textContent = "0" + minutes;
